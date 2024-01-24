@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=htmlWebpackPlugin.options.title%></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <section>
+        <main>
+            <div class="container-fluid bannerContainer" style="background: url(./code.jpg);">
+                <div class="container">
+                    <div class="main-content">
+                        <div class="form-division mt-2">
+                            <form action="get" id="form" class="form pt-5">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Jhon Doe">
+                                    <div  class="independent">
+                                        <span id="nameError"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Your Email Address</label>
+                                    <input type="email" id="email" class="form-control" placeholder="example@xample.com">
+                                    <div  class="independent">
+                                        <span id="emailError"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group mt-3">
+                                    <label for="phone">Your Mobile No.</label>
+                                    <input type="tel" id="phone" class="form-control" placeholder="+1234567890">
+                                    <div class="independent">
+                                        <span id="phoneError"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="password">Your password</label>
+                                    <input type="password" id="password" class="form-control" placeholder="Your password">
+                                    <span id="eyesIcon"  class="font-icon" ><i class="bi bi-eye"></i> <i class="bi bi-eye-slash" ></i></span>
+                                    <div  class="independent">
+                                        <span id="passwordError"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group mt-4">
+                                    <label for="rePassword">Retype Your Password</label>
+                                    <input type="password" id="rePassword" class="form-control" placeholder="re-type password">
+                                    <span id="eyesIconReType" class="#"><i class="bi bi-eye beye"></i> <i class="bi bi-eye-slash beye-slash"></i></span>
+                                    <div  class="independent" >
+                                        <span id="reTypePwdError"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group mt-2">
+                                    <input type="submit" id="submit" class="btn btn-primary" value="Submit">
+                                </div>
+                                <div class="form-group mt-4">
+                                    <span id="success-text"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"> </script>
+    <script src="./index.js"></script>
+</body>
+</html>
